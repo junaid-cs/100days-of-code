@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    Functions
+</body>
+</html>
+
+<script>
+    function jay(){
+        console.log("hello jay");
+    }
+    jay();
+    // funcion with parameters
+    function sum(a,b){
+        //Parameter are work like local variable in function scop
+        let sum=a+b;
+        return sum;
+    }
+    console.log(sum(2,9));
+    //Arrow functions
+    let hello=()=> {console.log("Hello")};
+    hello();
+    //With parameter
+    let multi= (c,d) => {
+        let multi=c*d;
+        return multi;
+    }
+   console.log( multi(4,5));
+   (function (){
+        console.log("hello")
+    }
+    ());
+    // or
+    let name=function(){
+        console.log("iifes")
+    }();
+</script>

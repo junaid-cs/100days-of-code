@@ -1,0 +1,9 @@
+Array are variable which can hold multiple values 
+array are mutable
+    1.Array
+        a.Print array using for loop
+    2.Array method
+        a.push
+        b.pop
+        c.shift
+        d.unshift

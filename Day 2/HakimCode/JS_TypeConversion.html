@@ -1,0 +1,61 @@
+<script>
+  // Typecasting: Typecasting is a way to convert a variables from one datatypes to another
+
+  // 1.Implicit Typecasting: JS automatically converts one datatype to another
+  //String with number
+  let result;
+  result = "3" + 2;
+  console.log(`The result is:` + result + typeof result);
+  // Note: When a number is added to a string JS converts the number to a string before concatenation
+  result = "4" - 2;
+  console.log(`The result is:` + result + typeof result);
+  // string with string
+  result = "Hello" - "World!";
+  result = "Hello" * "World!";
+  result = "Hello" / "World!";
+  console.log(`The result is:` + result + typeof result);
+
+  //Explicit conversion: That you do manually is known as explicit conversion
+  //convert to number
+  //string into number
+  result = Number("234");
+  console.log(`The result is:` + result + typeof result); //result:234(number)
+
+  //Boolean into number
+  result = Number(true);
+  console.log(`The result is:` + result + typeof result); // Resily:1(number)
+
+  //null into number
+  result = Number(null);
+  console.log(`The result is:` + result + typeof result); // result:0(number)
+
+  //invalid string into number
+  result = Number(undefined);
+  result = Number(NaN);
+  console.log(`The result is:` + result + typeof result);
+
+  //PareInt , ParseFloat
+  result = parseInt("20.33");
+  console.log(`The result is:` + result + typeof result); //result: 20(number)
+
+  result = parseFloat("20.33");
+  console.log(`The resuly is:` + result + typeof result); //Result:20.33(number)
+
+  // Convert numbet into string
+  result = String(12);
+  console.log(`The resilt is:` + result + typeof result); // Result : 12(string)
+
+  //toString()
+  result = (123).toString();
+  console.log(`The result is:` + result + typeof result); // Result : 123(string)
+
+  //Convert to boolean
+  result = Boolean(""); // result: false(Boolean)
+  result = Boolean(undefined); // result: false(Boolean)
+  result = Boolean(null); // result: false(Boolean)
+  result = Boolean(NaN); // result: false(Boolean)
+  result = Boolean(234); // result: true(Boolean)
+  result = Boolean("hello"); // result: true(Boolean)
+  result = Boolean(" "); // result: true(Boolean)
+  console.log(`The result is:` + result + typeof result);
+</script>

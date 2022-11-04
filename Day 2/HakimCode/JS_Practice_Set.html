@@ -1,0 +1,23 @@
+<script>
+  // Q1 .Use logical Operator to find the age of a person lies between 10 and 20
+  let age = prompt("Enter person age:");
+  if (age > 10 && age < 20) {
+    console.log(`The person age is between 10 and 20 so age is : ${age}`);
+  } else {
+    console.log(`The age is not lies b/w 10 and 20`);
+  }
+
+  //Q2 .Write a JS Program to find number is divisible by 2 and 3
+  let number = prompt(`Enter value for number:`);
+  if (number % 2 == 0) {
+    console.log(`The number is ${number} and it is divisible by 2`);
+  } else if (number % 3 == 0) {
+    console.log(`The number is ${number} and is divisible by 3 `);
+  } else {
+    console.log(`The number is ${number} and it not divisible by 2 and 3`);
+  }
+
+  //Q.3: Print "You can drive" and "You can't drive "based on age being greaterthan 18 using ternary operator?
+  let age = prompt("Enter person age?");
+  console.log(age >= 18 ? "You can drive!" : "You can't drive.");
+</script>

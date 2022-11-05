@@ -1,0 +1,30 @@
+<script>
+    //Function:A function is a block of code that perform a specific task and the function is executed when it call it
+    //Simple Function for display any text you want
+    function myfunc(){
+        console.log(`Welcome to BKUC`);
+    }
+    myfunc();
+    //Function with paramenters
+    function greet(name){
+        console.log(`Hello ${name}`);
+    }
+    let name=prompt('Enter your name please?');
+    greet(name);
+    //Add to parameters and perform addition
+function add(a,b){
+    console.log(a+b);
+}
+add(2,4);
+//Function return
+function multi(num1=2,num2=3){
+    return num1*num2;
+}
+console.log(multi(2,4));
+
+//Function expression
+let square=function(x){
+    return x*x;}
+    console.log(square(8));
+
+</script>

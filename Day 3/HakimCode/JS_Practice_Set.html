@@ -1,0 +1,25 @@
+<script>
+    //Q1. Write a program to print marks of a student in an object using for-in loop
+    let Marks={
+        Junaid:94,
+        Hakim:75,
+        Salman:85,
+    }
+    for(let i in Marks){
+        console.log(`Marks of ${i} is:`+Marks[i]);
+    }
+    //Q2.Write a JS program to find the positive numbers if user enter a negative number then the loop ends?
+    let sum=0;
+    let number=parseInt(prompt('Enter value for number?'));
+    while(number>=0){
+        sum+=number;
+        number=parseInt(prompt('Enter value for number?'));
+    }
+    console.log(`The sum is:`+sum);
+
+    //Q3.Write a program to find the mean of 5 numbers?
+    function mean(a,b,c,d,e){
+        return a+b+c+d+e/2;
+    }
+    console.log(`the mean is:`+mean(2,3,4,5,6));
+</script>

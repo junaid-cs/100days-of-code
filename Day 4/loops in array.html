@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Loops in Array</h2>
+</body>
+</html>
+<script>
+    let arr1=[1,2,4,5,2,6];
+    // arr1.forEach((element)=>{
+    //     console.log(element);
+    // })
+    // for(let i=0; i<arr1.length; i++){
+    //     console.log(arr1[i]);
+    // }
+    // for(let index in arr1){
+    //     console.log(arr1[index]+1);
+    // }
+    // for(let array of arr1){
+    //     console.log(array);
+    // }
+    // map create another array
+//    let a= arr1.map((value)=>{
+//     console.log(value);    
+//     return value+2;
+//     })
+//     console.log(a);
+// filter
+    // let a=arr1.filter((value)=>{
+    //     return (value<4);
+    // })
+    // console.log(a);
+    // reduce
+    let a=arr1.reduce((val1,val2)=>{
+        return (val1+val2);
+    })
+    console.log(a);
+</script>

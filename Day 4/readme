@@ -1,0 +1,8 @@
+Array method
+    1. Array in for loop
+    2. Array in foreach
+    3. Array in (for in) and (for of) loop
+    4. Array high order method 
+        a.map
+        b.filter
+        c.reduce 

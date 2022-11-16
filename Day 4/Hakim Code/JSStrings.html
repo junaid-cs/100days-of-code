@@ -1,0 +1,40 @@
+<script>
+    //String:The combination for string is called loop
+
+    //create string: JS strings are created by surrounding quotes single quotes,Double quotes,back ticks
+    const text="Welcome to BKUC";
+    console.log(text);
+    //access string character
+    //First way
+    let name="Hakim Ullah";
+    console.log(`The Character of ${name} is:`+name[0]);
+    //second way is use charAt() method
+    console.log(name.charAt(0));
+    //length property
+    const len="How are You!";
+    console.log(`The length of ${len} is:`+len.length);
+    //Concat()
+    let fname="Junaid ";
+    let lname="Khan";
+    console.log(fname.concat(lname));
+    //Replace()
+    let tex="Hi Everyone!";
+    console.log(tex.replace('Hi','Hello'));
+
+    //split()
+    let subject="WEB ENGINEERING";
+    console.log(subject.split(" "));
+    //substr()
+    console.log(text.substr(8,2));
+    //substring()
+    console.log(text.substring(0,7));
+    //toLowerCase()
+    let n="Hakim Ullah Daudzai";
+    console.log(n.toLowerCase());
+    //toUpperCase()
+    console.log(n.toUpperCase());
+    //includes()
+    console.log(text.includes('to'));
+    //search()
+    console.log(text.search('to'));
+</script>

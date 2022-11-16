@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guesser</title>
+</head>
+<body>
+    <h2>Number Guesser</h2>
+</body>
+</html>
+<script>
+    let random_number=Math.ceil(Math.random()*100);
+    console.log(random_number);
+    let guess;
+    let i=100;
+    do{
+     guess=prompt("Enter your guess");
+    a=Number.parseInt(guess);
+        i--;
+    if(guess == random_number){
+        console.log("Congrates Your geuss is right");
+        console.log(i);
+}
+else if(guess < random_number){
+    console.log("Your guess is less than value")
+}
+else if(guess > random_number){
+    console.log("Your guess is larger than value")
+}
+}while(random_number != guess)
+</script>

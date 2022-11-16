@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice</title>
+    </head>
+    <body>
+        <h2>Practice question</h2>
+    </body>
+    </html>
+    <script>
+        // take a number and add an array
+        arr=[1,2,4,5,3,10,70,40];
+        // arr.push(44);
+        // arr.forEach(array => {
+        //     // console.log(array);
+        // });
+
+        // Problem 2
+        // adding value to array untile 0 is add
+    //     let a;
+    //     do{
+    //         a =prompt("Enter value for array")
+    //         a=Number.parseInt(a);
+    //         if( a != 0){
+    //             // console.log(a);
+    //             arr.push(a);
+    //             display();      
+    //     }
+        
+    // }
+    // while(a!=0);
+    function display(){
+    arr.forEach(array => {
+                console.log(array);
+            });
+        }
+        
+        
+        // Problem 3
+        // Filter value that is divisable by 10
+
+      let filter=arr.filter(value=>{
+            return value%10 == 0;
+        })
+       filter.forEach(val=>{
+        console.log(val);
+       })
+
+</script>

@@ -1,0 +1,61 @@
+<script>
+    // ..Arrays Methods
+    //1.concat()
+    let arr1=[1,2,3];
+    let arr2=[4,5,6];
+    let arr3=[7,8,9];
+    let join=arr1.concat(arr2,arr3);
+    console.log(join);
+    //2.Indexof()
+    let arr=[1,2,3,4,5];
+    let search=arr.indexOf(3);
+    console.log(`The index number is:`+search);
+    //3.Push()
+    let team=['Hakim','Junaid'];
+    team.push('Haris');
+    console.log(team);
+    //4.POP()
+    let values=[1,2,3,4,5,6];
+    values.pop();
+    console.log(values);
+    //5.Unshift()
+    let beginadd=[2,3,4,5];
+    beginadd.unshift(1);
+    console.log(beginadd);
+    //6.Shift()
+    let beginremove=[0,1,2,3,4,5];
+    beginremove.shift();
+    console.log(beginremove);
+    //7.Sort()
+    let sorting=[1,0,5,7,10];
+    sorting.sort();
+    console.log(sorting);
+    //when we want to sort the array in ascending order we use compare function
+    let compare=(a,b)=>{
+        return a-b;
+    }
+    let arry=[1,3,7,0,2,5];
+    arry.sort(compare);
+    console.log(arry);
+     //when we want to sort the array in decending order we use compare function
+     let m=(a,b)=>{
+        return b-a;
+     }
+     let decending=[1,62,6,0];
+     decending.sort(m);
+     console.log(decending);
+
+     //8.reverse()
+     let rev=[1,2,7,9,10];
+     rev.reverse();
+     console.log(rev);
+     //splice()
+     let spl=[1,2,3,4,5];
+     spl.splice(0,2,7,8);
+     console.log(spl);
+     //slice()
+     console.log("slice");
+     let sls=[1,3,7,8];
+     let newarr=sls.slice(2);
+     console.log(newarr);
+</script>

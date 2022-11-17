@@ -1,0 +1,52 @@
+<script>
+    //Array:An array is an object that can store multiple values at once.it is a special type of variable
+
+    //Creating array on two ways:
+    //1.Array literal[]
+    const friends=['Junaid Khan','Haris Shah','Salman Khan','Taimour Usman'];
+    //print the Array
+    console.log(friends);
+
+    //2.creating array with new keyword
+    const arr=new Array(1,2,3,4,5);
+    console.log(arr);
+
+    //Some Example of array are given below:
+    //1.Empty Array
+    const emp=[];
+    console.log(emp);
+
+    // 2.Array of numbers
+    const numbers=[1,5,7,8,3,0];
+    console.log(numbers);
+
+    //3.Array of Strings
+    const subjects=['C++ Basics','OOP','Database Systems','Web Engineering','Visual Programming'];
+    console.log(subjects);
+
+    //4.Array with Mixed Datatypes
+    const mix=['Javascript',10,true,undefined,null];
+    console.log(mix);
+    //5.you can also store arrays,functions and other object inside an array
+    const mixdata=[
+        {'Best Friend':'Junaid Khan'},
+        [1,2,3,4],
+        function hello(){console.log("Hello World!")}
+    ];
+    console.log(mixdata);
+
+    //Access the specific element of an array
+    const universities=['BKUC','UOP','AWKUM'];
+    console.log(`My University is:`+universities[0]);
+    console.log(`Mardan University is:`+universities[2]); 
+
+    //length property
+    const len=[1,2,3,6,99,6,32,4];
+    console.log(`The length of ${len} is:`+len.length);
+
+    //change values in array
+    const marks=[100,85,75,32];
+    marks[3]=50;
+    console.log(marks);
+
+</script>

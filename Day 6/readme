@@ -1,2 +1,8 @@
 Day 6 Practice question
-    1.Take a value from user and tell them that he/she can drive or not
+    1.Take a value from user and tell them that he/she can drive or not.
+    2.Take a color from user and change it to background color.
+    3.Walking DOM
+            i.Accessing childern of an element.
+                firstchild
+                lastchild
+                childNodes (childNodes produce Node list not an array if we apply array property so it be not apply until we make it into array using array.from)

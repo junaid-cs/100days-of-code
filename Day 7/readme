@@ -5,6 +5,14 @@ Single Element Selector
         Change text content of element.
     Get element by querySelector
         querySelector is use for single element selector.
-Multiple Element Selector
-        
+Multiple Elements Selector
+    Get elements by className
+        Certain index.
+    Get elements by tagName which work mostly similar like className
+        convert elements collection with array
+        using foreach to display
+    Now we study about querySelectorAll which return a NodeList which not only element
+    but text node also it allow to do some array operation with out converting it into 
+    array 
+
 

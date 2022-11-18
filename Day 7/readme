@@ -1,0 +1,10 @@
+Single Element Selector 
+    Get element by id
+        Get things from element
+        Change color of element
+        Change text content of element.
+    Get element by querySelector
+        querySelector is use for single element selector.
+Multiple Element Selector
+        
+

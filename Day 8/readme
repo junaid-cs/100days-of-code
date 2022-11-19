@@ -6,3 +6,13 @@ Traversing the DOM
     Get next sibling
     nextsibling and nextElementsibling.
     Also the previoussibling
+Creat new Element using DOM
+    use of creatNode
+    append child
+    add classes and id 
+    setAttribute
+Removing and replacing Elements
+    replacing old element with new element
+    removing element and their chlid element
+    add and remove classes
+    adding and removing attributes

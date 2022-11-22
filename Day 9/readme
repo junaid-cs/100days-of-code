@@ -1,0 +1,25 @@
+Mouse Events
+        click event 
+        dbclick event
+        mousedown event
+        mouseup event
+        mouseover event 
+        mouseout event
+        mouseenter event
+        mouseleave event
+        mousemove event
+Keyboard Events
+        Submit event
+        keydown event
+        keyup event
+        keypress event
+        focus event
+        blur event
+        cut event
+        copy event
+        past event
+        input event(this is basicaly all events)
+        change event
+Bubling and delegation
+        Event Bubling (Bubling is when you click the child element so it also called its parent)
+        Event Delegation (When you click on parent so it call all the childs)

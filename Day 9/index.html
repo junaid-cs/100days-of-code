@@ -16,14 +16,22 @@
         <div class="row justify-content-center">
             <div class="col-6 ">
                 <h5 class="text-center">Task List</h5>
+                <form action="">
                     <div class="mt-5 mb-2 col-6">
                         <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1">
                         <!-- <div id="text" class="form-text">We'll never share your email with anyone else.</div> -->
+                
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+        
+                        <input type="submit" class="btn btn-primary mb-2">
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                    </div>
+                </form>
             
                 <ul class="list-group">
                     <li id="task-list" class="list-group-item d-flex justify-content-between">An item <a href="#"><i class="fa fa-close"></i></a></li>
@@ -38,7 +46,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script src="./mouse-events.js"></script>
+        <!-- <script src="./mouse-events.js"></script> -->
+        <script src="./keyboard-events.js"></script>
         
 </body>
 

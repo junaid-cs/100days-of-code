@@ -49,12 +49,15 @@
 
 
         btn.addEventListener('click',function(e){
+            
             let userinput=document.querySelector('#guessfeild').value;
             Previousguess.innerHTML+=userinput;
             document.querySelector('#guessfeild').value = '';
             if(userinput==number){
                 output.innerHTML=`The number is guess correctly and number is:${number}`;
-            }else if(userinput<number){
+                // break;
+            }
+            else if(userinput<number){
                 output.innerHTML=`The number is smaller!`;
             }
            if(userinput>number){
@@ -63,10 +66,13 @@
            if(turns>0){
             turns--;
             document.querySelector('.lastresult').textContent=turns;
+        
            }
            e.preventDefault();
-            
+        
         });
+   
+        
     </script>
 </body>
 </html>

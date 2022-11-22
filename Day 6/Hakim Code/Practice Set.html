@@ -1,0 +1,38 @@
+<script>
+    //Q1.Create an array of numbers and take input from user to add number to this array?
+    // let arr1=[1,24,66,88,9];
+    // let num1=Number.parseInt(prompt("Enter Value for Num1:"));
+    // arr1.push(num1);
+    // console.log(arr1);
+
+    //Q2. Fliter for numbers divisible by 10 from a given array?
+    let arr2=[10,100,77,41,50];
+    let subarr2=arr2.filter((ele)=>{
+     return ele%10==0;
+    }) ;
+    console.log(arr2);
+    console.log(subarr2);
+
+    //Q.3 Create an array of square of a given numbers?
+    let arr3=[3,7,5,10,8];
+    let subarr3=arr3.map((e)=>{
+        return e*e;
+    });
+    console.log(subarr3);
+
+    //Q4. Keep pushing numbers in the array until 0 is added to the array?
+//     let arr4=[1,2,3,4,5,6];
+//     let num4;
+//     do{
+//    num4=Number.parseInt(prompt("Enter Value For Num4:"));
+//    arr4.push(num4);
+//     }while(num4!=0);
+//     console.log(arr4);
+
+    //Q5. Use reduce to calculate factorial of a givennumber from an array of first n natural numbrs?
+    let arr5=[1,2,3,4,5,6];
+    let num5=arr5.reduce((j,h)=>{
+        return j*h;
+    });
+    console.log(num5);
+</script>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessor Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8 bg-primary shadow p-2" style="min-height: 350px;">
+            <h3 class="title bg-danger text-white text-center pt-2 pb-2 mb-2">Number Guessing Game</h3>
+           <div class="paras bg-white">
+            <p class="text-center mb-3">Try and guess a random number between 1 and 100.</p>
+            <p class="text-center">You have 10 attempts to guess the right number.</p>
+           </div>
+            <div class="main ">
+               <h2 class="text-white text-center">Guess a Number?</h2>
+               <form action="">
+                <div class="col-12 text-center p-3">
+                    <input type="text" id="guessfeild" class="p-3 bg-primary shadow text-center" autofocus >
+                </div>
+                <div class="col-12 text-center p-3">
+                    <button  value="Submit Guess" id="submit" class="btn-warning btn">Submit</button>
+                    <button  value="Restart Game" class="btn-warning btn">Restart</button>
+                </div>
+
+               </form>
+            </div>
+            <div class="result">
+                <p class="last-para bg-danger text-white text-center fs-4">Previous Guesses: <span class="guesses bg-white text-dark"></span></p>
+                <p class="last-para bg-danger text-white text-center fs-4">Guesses Remaining: <span class="lastresult"></span></p>
+                <p class="low bg-danger text-white text-center fs-3"></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn=document.querySelector('#submit');
+        let output=document.querySelector('.low');
+        let number=Math.floor(Math.random()*10);
+        let Previousguess=document.querySelector('.guesses');
+        let turns=document.querySelector('.lastresult').textContent=10;
+        Number.parseInt(turns);
+
+
+        btn.addEventListener('click',function(e){
+            
+            let userinput=document.querySelector('#guessfeild').value;
+            Previousguess.innerHTML+=userinput;
+            document.querySelector('#guessfeild').value = '';
+            if(userinput==number){
+                output.innerHTML=`The number is guess correctly and number is:${number}`;
+                // break;
+            }
+            else if(userinput<number){
+                output.innerHTML=`The number is smaller!`;
+            }
+           if(userinput>number){
+            output.innerHTML=`The number is high!`;
+           }
+           if(turns>0){
+            turns--;
+            document.querySelector('.lastresult').textContent=turns;
+        
+           }
+           e.preventDefault();
+        
+        });
+   
+        
+    </script>
+</body>
+</html>

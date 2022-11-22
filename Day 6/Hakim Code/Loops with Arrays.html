@@ -1,0 +1,62 @@
+<script>
+    //1.using forloop with array
+    const arr1=[1,54,6,7,3];
+    for(let i=0; i<arr1.length; i++){
+        console.log(arr1[i]);
+    }
+    //2.forEach() Method
+    let friends=['Junaid','Haris','Salman'];
+    friends.forEach(myfunction);
+    // function myfunction(item){
+    //     console.log(item);
+    // }
+    //updating  Array With forEach()
+    function myfunction(item){
+        console.log('Hello'+' '+item);
+    }
+    //ForEach() with Arrow Function
+
+let menu=['Juice','Burgur','Chicken'];
+menu.forEach(ele=>{
+console.log(ele);
+});
+
+//3.Array.from()
+let name="Hakim Ullah";
+let a;
+a=Array.from(name);
+console.log(a);
+
+//4.for of
+let num=[1,8,9,10];
+for(let j of num){
+    console.log(j);
+}
+//5.for in
+let num2=[1,7,6,3,0];
+for(let h in num2){
+    console.log(h);
+}
+
+//6.Map()
+let numbers=[2,4,6,8,10];
+function square(num){
+    return num*num;
+}
+let square_number=numbers.map(square);
+console.log(square_number);
+
+//7,filter()
+let min=[0,1,10,100,15,12];
+let h=min.filter((a)=>{
+    console.log(a);
+  return a<15;
+});
+console.log(h);
+//8.reduce()
+let red=[1,2,3,4,5];
+let add=red.reduce((ele,eml)=>{
+return ele+eml;
+});
+console.log(add);
+</script>

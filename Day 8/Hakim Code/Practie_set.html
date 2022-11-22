@@ -1,0 +1,25 @@
+<script>
+    // Q1. Write a program using prompt function to take input as a age from user and use alert to display the output "He can drive or not"?
+    let age=parseInt(prompt("Enter age:?"));
+    if(age>=20){
+        alert(`The age of user ${age} and he can drive`);
+    }
+    else{
+        alert(`The user age is ${age} and he is can't drive.
+               user want to enter the age again      `);
+        age=parseInt(prompt("Enter age:?"));
+    }
+
+    //Q2.in the previous question use console,error when user can enter -ive value o age?
+   let userage=parseInt(prompt('Enter age please?'));
+   if(userage>=20){
+    console.log("You can Drive!");
+   }
+   else if(userage<0){
+    console.error("Your age is negative and the negative age is not possible");
+   }
+   else{
+    console.warn('You cannot drive');
+   }
+    
+</script>

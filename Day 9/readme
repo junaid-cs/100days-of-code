@@ -20,6 +20,3 @@ Keyboard Events
         past event
         input event(this is basicaly all events)
         change event
-Bubling and delegation
-        Event Bubling (Bubling is when you click the child element so it also called its parent)
-        Event Delegation (When you click on parent so it call all the childs)

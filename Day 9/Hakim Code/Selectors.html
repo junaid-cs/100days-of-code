@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Bacha Khan University Charsadda</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dicta dignissimos neque fugiat at, laudantium nemo quasi laboriosam? Totam, exercitationem?x</p>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dicta dignissimos neque fugiat at, laudantium nemo quasi laboriosam? Totam, exercitationem?x</p>
+    <input type="text" name="" id="">
+    <button>Submit</button>
+
+    <script>
+        //Selectors
+        //1.document.getElementById()
+        let head=document.getElementById("heading");
+        //how to change innerHTML
+        head.innerHTML="Welcome to the JAVASCRIPT TUTORIALS";
+        console.log(head);
+        //how to change innerText
+        head.innerText="Hello";
+        //how to change textContent
+        head.textContent="Hello World?";
+        //how to change style
+        head.style.color="crimson";
+
+     //2.document.getElementsByTagName()
+     let heading=document.getElementsByTagName("h1");
+     console.log(heading);
+
+     //3.document.getElementsByClassName()
+     let para=document.getElementsByClassName("para");
+     console.log(para[1]);
+
+     //4.document.querySelector()
+     let text=document.querySelector('#heading');
+     console.log(text);
+    
+            </script>
+</body>
+</html>

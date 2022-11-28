@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differences</title>
+</head>
+<body>
+    <h1>The Difference between innerText , textContent , innerHTML</h1>
+    <p id="text">Hello Everyone Welcome to BKUC keep Learning and keep smilling:)</p>
+    <p id="para">I am <span>Hakim Ullah</span> and i am student of computer science</p>
+    <h2 id="main">"
+        Bacha Khan University Charsadda
+    "</h2>
+    <p id="name">University</p>
+
+    <script>
+        //innerText
+        let p=document.getElementById("text").innerText;
+        console.log(p);
+        //innerHTML
+        let para=document.getElementById("para").innerHTML;
+        console.log(para);
+        //textContent
+        let main=document.getElementById("main").textContent;
+        console.log(main);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing the DOM</title>
+</head>
+<body>
+    
+    <script>
+        //Walking the DOM
+        console.log(document.documentElement);
+        console.log(document.title);
+        console.log(document.body);
+
+        //Accessing children of an element
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+        console.log(document.body.childNodes);
+        //convert an nodelist into array
+        let arr=Array.from(document.body.childNodes);
+        console.log(arr);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Methods</title>
+</head>
+<body>
+    <div class="hey" id="first">Hello World!</div>
+    <script>
+        let first=document.getElementById('first');
+        //getAttribute method
+        let a=first.getAttribute('id');
+        a=first.getAttribute('class');
+        console.log(a);
+        //hasAttribute Method
+        console.log(first.hasAttribute('class'));
+        //setAttribute
+        // console.log(first.setAttribute("hidden","false"));
+
+        //removeAttribute
+        // console.log(first.removeAttribute('class'));
+
+        //Attributes
+        console.log(first.attributes);
+
+    </script>
+</body>
+</html>

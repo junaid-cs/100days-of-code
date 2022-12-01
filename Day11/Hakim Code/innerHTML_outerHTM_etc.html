@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML , OuterHTML and other properties</title>
+</head>
+<body>
+    <span>Welcome to the <b>DOM</b> Manipulation</span>
+    <div hidden class="container">Hello World!</div>
+
+    <script>
+        //Console.dir Function
+        let x=document.getElementsByTagName('span');
+        console.dir(x);
+        //tagname/nodename
+        console.log(document.body.firstChild.nodeName);
+        console.log(document.body.firstElementChild.nodeName);
+        //innerHTML
+        let z=document.querySelector('span');
+        console.log(z.innerHTML);
+        //outerHTML
+        console.log(z.outerHTML);
+        //textContent
+        console.log(z.textContent);
+
+        //hidden Attribute
+        let hide=document.querySelector('.container');
+        hide.hidden=false; 
+        z.hidden=true;
+
+        
+    </script>
+</body>
+</html>

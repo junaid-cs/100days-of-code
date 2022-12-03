@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS serTineOut and SetInterval</title>
+</head>
+<body>
+    <script>
+        //setTimeout and clearTimeout
+        let timer=setTimeout(function(){
+            alert('Welcome to my personal Blog!');
+            },6000);
+       let permission= prompt('Do you want to display alert');
+        if("no"==permission){
+            clearTimeout(timer);
+        }
+            console.log(timer);
+
+    //setInterval and clearInterval
+    let inetrvl=setInterval(function(){alert("I am setInterval");},3000);
+    let stop=prompt("Do you want to call again setinterval");
+    if("no"==stop){
+        clearInterval(inetrvl);
+    }
+    </script>
+</body>
+</html>

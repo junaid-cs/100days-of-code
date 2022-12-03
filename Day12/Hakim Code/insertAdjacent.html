@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert Adjacent HTML/Element/Text</title>
+</head>
+<body>
+    <div id="first">I am First container</div>
+    <div id="remove">I am container</div>
+
+    <script>
+        first.insertAdjacentHTML('beforebegin','<p>I am before begin</p>');
+        first.insertAdjacentHTML('afterbegin','<p>I am after begin</p>');
+        first.insertAdjacentHTML('beforeend','<p>I am before End</p>');
+        first.insertAdjacentHTML('afterend','<p>I am after End</p>');
+
+        // Removal node
+        remove.remove();
+    </script>
+</body>
+</html>

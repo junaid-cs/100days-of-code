@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS className & classList</title>
+    <style>
+        .purple{
+            background:purple;
+        }
+        .text-white{
+            color: #fff;
+        }
+        .text-align{
+            text-align: center;
+        }
+        .active{
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">Hello World!</div>
+
+    <script>
+        //className
+        first.className="purple text-white text-align";
+// ClassList
+    first.classList.remove('text-align');
+    first.classList.add('active');
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Events</title>
+</head>
+<body>
+    <label for="">FocusEvent</label>
+    <input type="text" id="inputtext">
+    <label for="">blur Event</label>
+    <input type="text" id="inputpassword">
+    <label for="">Focusin Event</label>
+    <input type="text" id="inputemail">
+    <script>
+        function displaytype(e){
+            console.log(e.type);
+        }
+
+        //focus
+        let focs=document.getElementById('inputtext');
+        focs.addEventListener('focus',displaytype);
+        //blur
+        let blr=document.getElementById('inputpassword');
+        blr.addEventListener('blur',displaytype);
+
+        //focusin
+        let fcs=document.getElementById('inputemail');
+        fcs.addEventListener('focusin',displaytype);
+    </script>
+</body>
+</html>

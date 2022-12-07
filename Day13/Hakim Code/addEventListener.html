@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <h1>addEventListener()</h1>
+    <button class="btn">Click me</button>
+    <button class="mybtn">Click me</button>
+    <script>
+        // addEventListener
+        let btn=document.querySelector('.btn');
+        btn.addEventListener('click',show,false);
+        function show(){
+            alert('Clicked!');
+        }
+       //anonyms functiom
+       let mybtn=document.querySelector('mybtn');
+       mybtn.addEventListener('click',function(){
+        alert("Clicked");
+       });
+
+       //removeEventListener
+       btn.removeEventListener('click',show,false);
+    </script>
+</body>
+</html>

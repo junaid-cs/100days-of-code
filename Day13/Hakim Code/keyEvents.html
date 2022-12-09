@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events</title>
+</head>
+<body>
+    <label for="">Keydown Event</label>
+    <input type="text" id="inputtext">
+    <label for="">Keypress Event</label>
+    <input type="text" id="inputmail">
+    <label for="">Keyup Event</label>
+    <input type="text" id="inputnum">
+    <label for="">textInput Event</label>
+    <input type="text" id="inputradio">
+
+    <script>
+        function display(e){
+            console.log(e.type);
+        }
+        //keydown
+        let keydown=document.getElementById('inputtext');
+        keydown.addEventListener('keydown',display);
+        //keypress
+        let keypre=document.getElementById('inputmail');
+        keypre.addEventListener('keypress',display);
+        //keyup
+        let up=document.getElementById('inputnum');
+        up.addEventListener('keyup',display);
+    </script>
+</body>
+</html>

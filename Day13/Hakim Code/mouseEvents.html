@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+    <button id="mdown">Mouse Down</button>
+    <button id="mup">Mouse Up</button>
+    <button id="click">click Me</button>
+    <button id="dbl">DBLclick Me</button>
+    <button id="me">Mouse Enter</button>
+    <button id="ml">Mouse Leave</button>
+    <button id="mover">Mouse over</button>
+    <button id="mout">Mouse Out</button>
+    <button id="mmove">Mouse Move</button>
+
+    <script>
+        //Function for displaying type of event
+        function displaytype(e){
+            console.log(`Event is: `+e.type);
+        }
+
+        //mousedown
+        let md=document.getElementById('mdown');
+        md.addEventListener('mousedown',displaytype);
+        //mouseup
+        let mp=document.getElementById('mup');
+        mp.addEventListener('mouseup',displaytype);
+        
+        //click
+        let click=document.getElementById('click');
+        click.addEventListener('click',displaytype);
+        //dblclick
+        let dbl=document.getElementById('dbl');
+        dbl.addEventListener('dblclick',displaytype);
+        // mouseEnter
+        let me=document.getElementById('me');
+        me.addEventListener('mouseenter',displaytype);
+        // ..mouseleave
+        let ml=document.getElementById('ml');
+        ml.addEventListener('mouseout',displaytype);
+        //mouseover
+        let mover=document.getElementById('mover');
+        mover.addEventListener('mouseover',displaytype);
+        //mouseout
+       let mout=document.getElementById('mout');
+       mout.addEventListener('mouseout',displaytype);
+       //mousemove
+       let mmove=document.getElementById('mmove');
+       mmove.addEventListener('mousemove',displaytype);
+       //contextmenu
+       let body=document.body;
+       body.addEventListener('contextmenu',displaytype);
+
+    </script>
+</body>
+</html>

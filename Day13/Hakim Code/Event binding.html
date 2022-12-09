@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Binding</title>
+</head>
+<body>
+    <h1>Event handling</h1>
+    <!-- Event binding with HTML Attribute -->
+    <button onclick="display();">Click Me</button>
+    <!-- Event binding with js -->
+    <button id="btn">Click Me</button>
+    <script>
+        // <!-- Event binding with HTML Attribute function -->
+        function display(){
+            alert("Button is clicked");
+        }
+
+        // Event binding with JS
+        let btn=document.querySelector('#btn');
+        btn.onclick=function(){
+            alert("Clicked");
+        }
+    </script>
+</body>
+</html>

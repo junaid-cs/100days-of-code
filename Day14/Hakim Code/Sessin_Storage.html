@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Storage in JS</title>
+    <style>
+      #input {
+        padding: 1rem 2rem;
+      }
+      #btn {
+        padding: 1rem 1.5rem;
+        background: blue;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="" id="input" placeholder="Write Something..." />
+    <button id="btn">Submit</button>
+    <script>
+      let input = document.getElementById("input");
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        //   console.log(input.value);
+        sessionStorage.setItem("Name:", input.value);
+      });
+
+      console.log(sessionStorage.getItem("Name:"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      .container {
+        background: purple;
+        color: #fff;
+        padding: 10px;
+      }
+      .middle-container {
+        background: crimson;
+        color: #fff;
+        padding: 10px;
+      }
+      .inner-container {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Bubbling in Javascript</h1>
+    <div id="top">
+      Top Div
+      <button id="btn">Click Me</button>
+    </div>
+    <hr />
+    <hr />
+    <div class="con" onclick="console.log('Container Event Called!');">
+      Container
+      <div
+        class="middle-container"
+        onclick="console.log('middle-container Event Called!');"
+      >
+        Middle container
+        <div
+          class="inner-container"
+          onclick="console.log('Inner-Container Event Called!');"
+        >
+          inner Container
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Topdiv JS code
+      let topdiv = document.getElementById("top");
+      topdiv.addEventListener("click", function () {
+        console.log("The top div Event has been called!");
+      });
+      // inside div js code
+      let button = document.getElementById("btn");
+      button.addEventListener("click", function () {
+        console.log("Button Event has been Called!");
+      });
+    </script>
+  </body>
+</html>

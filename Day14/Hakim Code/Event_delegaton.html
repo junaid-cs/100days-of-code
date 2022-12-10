@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .grandparent {
+        width: 400px;
+        height: 100px;
+        background: purple;
+        color: #fff;
+        padding: 10%;
+      }
+      .parent {
+        width: 300px;
+        height: 80px;
+        background: crimson;
+        color: #fff;
+        padding: 10%;
+      }
+      .child {
+        width: 200px;
+        height: 50px;
+        background: black;
+        color: #fff;
+        padding: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grandparent" id="grandparent">
+      grandparent
+      <div class="parent" id="parent">
+        parent
+        <div class="child" id="child">Child</div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("grandparent")
+        .addEventListener("click", function (Event) {
+          console.log("Grandparent called!");
+          if (event.target.id === "child") {
+            document.body.style = "background:blue;";
+          } else if (event.target.id === "parent") {
+            document.body.style = "background:crimson;";
+          } else {
+            document.body.style = "background:orangered;";
+          }
+        });
+    </script>
+  </body>
+</html>

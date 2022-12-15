@@ -3,6 +3,7 @@ let single_output=document.querySelector('.single-output');
 let multiple_btn=document.querySelector('.multiple-btn');
 let multiple_output=document.querySelector('.multiple-output');
 let input = document.querySelector('[data-input]');
+console.log(input);
 
 single_btn.addEventListener('click',loadsingledata)
 function loadsingledata(){
@@ -31,21 +32,31 @@ function loadsingledata(){
 // loadsingledata();
 
 multiple_btn.addEventListener('click',loadmultipledata);
-function loadmultipledata(){
+function loadmultipledata(e){
+    console.log(input.value)
     let xhr = new XMLHttpRequest;
-    xhr.open('GET',`https://dummyjson.com/products/${input.value}`,true);
+    xhr.open('GET',`https://dummyjson.com/products`,true);
     xhr.onload = function ()
     {
         if(this.status == 200){
             let mul_response=JSON.parse(this.responseText);
+            let mu_response=JSON.stringify(this.responseText);
             let output = '';
+            console.log(mu_response[2], input.value);
+            mul_response.products.forEach(function(response) {
+                console.log(JSON.stringify(response));
+                output +=
+                `<li> ${response.id}</li>
+                <li> ${response.title}</li>
+                <li><img src="${response.images[1]}" alt="" srcset=""> </li>
+                `
 
-            // mul_response.forEach(response => {
-            //     console.log(response);
-            // });
-            console.log(mul_response, input.value);
+                multiple_output.innerHTML=output;
+            });
         }
+
     }
     xhr.send();
+    e.preventDefault();
 }
-loadmultipledata();
+// loadmultipledata();

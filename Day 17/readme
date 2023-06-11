@@ -1,0 +1,6 @@
+Starting EasyHttp version 2.0 
+Using Fatch and promise to make it the new standerd of the ES6
+
+Frist make a class of EasyHttp and than add method of get/post/put/delete
+than in app.js make object of the class and access the method of the class
+and add data to the varables

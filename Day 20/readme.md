@@ -1,7 +1,3 @@
-# 100days-of-code
- This is for pratice 
-
-# Day 20
 Solving Some DSA Problems
     1.Solving sum of two number = to target value from an array
       Example:

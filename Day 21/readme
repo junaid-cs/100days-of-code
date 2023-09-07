@@ -1,0 +1,6 @@
+# Day 21
+    1.Count Unique value from an array
+        example:
+                [1,1,1,2,2,3,4,5,6,6]
+            Ouput array will be
+               Ouput: 6

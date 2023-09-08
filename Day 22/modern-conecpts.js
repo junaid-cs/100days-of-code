@@ -96,4 +96,21 @@ arr = [1,2,3,4,5,6];
      fun("khan");
 
 
+     let arr2=[5,7,9,11,15];
 
+     function findodd(arr2){
+        for (let i = 0; i < arr2.length; i++) {
+            let curr = arr2[i];
+            let next = curr +2;
+            if(arr2[i+1] !== next) {
+                console.log(next);
+                break;
+                
+            }
+        }
+     }
+     findodd(arr2);
+
+
+let reversestring = "this is a test string".split(" ").reverse().join(" ");
+console.log(reversestring)

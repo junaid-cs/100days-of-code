@@ -166,7 +166,13 @@
     padding-bottom: 20px;
     text-transform: capitalize;
   }
-  
+  .btn-group .logo-img{
+    height: 63px;
+    width: 60px;
+    margin-bottom: -25px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
   /** button group styles **/
   .btn-group {
     border-radius: 1rem;

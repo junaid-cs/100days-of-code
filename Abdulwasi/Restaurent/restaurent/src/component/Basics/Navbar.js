@@ -5,6 +5,7 @@ const navbar = ({ filterItem, menuList }) => {
     <>
       <nav className="navbar">
         <div className="btn-group">
+        <img src="./images/logo.png" alt="" className="logo-img" />
           {menuList.map((curElem) => {
             return (
               <button

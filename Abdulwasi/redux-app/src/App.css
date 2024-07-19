@@ -1,0 +1,21 @@
+*{
+  text-align: center;
+}
+.container h1{
+  color: grey;
+}
+.container h4{
+  color: grey;
+}
+.quantity_minus{
+  background-color: grey;
+  padding: 5px;
+}
+.quantity_plus{
+  background-color: grey;
+  padding: 5px;
+}
+.quantity__input{
+  padding: 5px;
+  border: 2px solid grey;
+}

@@ -23,6 +23,11 @@ function Home(props) {
                         ()=>{props.addToCartHandler({pice:1000,name:'i phone 13'})}
                         }>
                         Add To Cart</button>
+                        <button className='remove-cart-btn'
+                    onClick={
+                        ()=>{props.removeToCartHandler()}
+                        }>
+                        Remove To Cart</button>
                 </div>
             </div>
         </div>

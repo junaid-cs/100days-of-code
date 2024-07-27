@@ -6,11 +6,20 @@ import {
   selectedProduct,
   removeSelectedProduct,
 } from "../redux/actions/productsActions";
+import { addToCart, getTotals } from "./cartSlice";
 const ProductDetails = () => {
   const { productId } = useParams();
+  const handleAddToCart = (product) =>{
+    dispatch(addToCart(product))
+  }
   let product = useSelector((state) => state.product);
+  const cart= useSelector((state)=> state.cart);
   const { image, title, price, category, description } = product;
   const dispatch = useDispatch();
+
+  useEffect(()=> {
+dispatch(getTotals());
+  }, [cart, dispatch]);
   const fetchProductDetail = async (id) => {
     const response = await axios
       .get(`https://fakestoreapi.com/products/${id}`)
@@ -45,10 +54,7 @@ const ProductDetails = () => {
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
-                <div className="ui vertical animated button" tabIndex="0">
-                  <div className="hidden content">
-                    <i className="shop icon"></i>
-                  </div>
+                <div className="ui button" tabIndex="0"  onClick={() => handleAddToCart(product)}>
                   <div className="visible content">Add to Cart</div>
                 </div>
               </div>
